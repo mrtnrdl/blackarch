@@ -2,11 +2,11 @@
 # See COPYING for license details.
 
 pkgname='yawast'
-pkgver=429.578a67d
+pkgver=519.9576f39
 pkgrel=1
 pkgdesc='The YAWAST Antecedent Web Application Security Toolkit.'
 groups=('blackarch' 'blackarch-webapp' 'blackarch-scanner' 'blackarch-fuzzer')
-arch=('i686' 'x86_64' 'armv6h' 'armv7h' 'aarch64')
+arch=('x86_64' 'armv6h' 'armv7h' 'aarch64')
 url='https://github.com/adamcaudill/yawast'
 license=('BSD')
 depends=('ruby')

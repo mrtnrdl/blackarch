@@ -2,11 +2,11 @@
 # See COPYING for license details.
 
 pkgname='hcxtools'
-pkgver=379.185825f
+pkgver=692.583d291
 pkgrel=1
 pkgdesc='Small set of tools to capture and convert packets from wlan devices for the use with hashcat.'
 groups=('blackarch' 'blackarch-wireless')
-arch=('i686' 'x86_64' 'armv6h' 'armv7h' 'aarch64')
+arch=('x86_64' 'armv6h' 'armv7h' 'aarch64')
 url='https://github.com/ZerBea/hcxtools'
 license=('MIT')
 depends=('libpcap' 'openssl' 'curl')
@@ -37,7 +37,8 @@ package() {
 
   install -Dm755 -t "$pkgdir/usr/bin" wlandump-ng wlanrcascan wlancap2hcx \
     wlanhcx2cap wlanhc2hcx wlanhcx2essid wlanhcx2ssid wlanhcx2john wlanhcxinfo \
-    wlanhcxmnc whoismac wlancapinfo wlanresponse wlanpmk2hcx
+    wlanhcxmnc whoismac wlanpmk2hcx wlancap2wpasec wlancow2hcxpmk wlanhashhcx \
+    wlanhcx2psk wlanhcxcat wlanjohn2hcx wlanwkp2hcx hcxdumptool hcxpcaptool
   install -Dm644 -t "$pkgdir/usr/share/doc/hcxtools/" README.md
   install -Dm644 license.txt "$pkgdir/usr/share/licenses/hcxtools/license.txt"
 }

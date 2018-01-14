@@ -2,18 +2,18 @@
 # See COPYING for license details.
 
 pkgname='frida'
-pkgver='9.0.4'
+pkgver='10.6.21'
 pkgrel=1
 pkgdesc='Inject JavaScript to explore native apps on Windows, Mac, Linux, iOS and Android.'
 groups=('blackarch' 'blackarch-reversing' 'blackarch-backdoor')
-arch=('i686' 'x86_64' 'armv6h' 'armv7h' 'aarch64')
+arch=('x86_64' 'armv6h' 'armv7h' 'aarch64')
 url='http://www.frida.re'
 depends=('python' 'python-colorama' 'python-pygments' 'python-prompt_toolkit')
 makedepends=('python-setuptools')
 license=('custom:unknown')
-source=("https://pypi.python.org/packages/7e/ef/eadc12e9d0fd26968ec8d31d740acad6a0d1a0841887f4f0799e56132f84/frida-${pkgver}.zip"
+source=("https://pypi.python.org/packages/b7/9a/8543b62b5847e28a0c1979b96a39b333555288d7870abe94b4ed2331abb0/frida-${pkgver}.tar.gz"
         "https://raw.githubusercontent.com/frida/frida/master/COPYING")
-sha1sums=('363f04951de11473b4b76473dcb65bbdc82df7c2'
+sha1sums=('22f7eed6798bc768d491674c4dedc738ef2e93fc'
           '446db87c3fe0de0b2898ba8e8b3e5a8e7f644fdc')
 
 build() {

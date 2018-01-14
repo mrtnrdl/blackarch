@@ -2,12 +2,12 @@
 # See COPYING for license details.
 
 pkgname='pgdbf'
-pkgver=105.f48a91c
+pkgver=109.24ded7b
 pkgrel=1
 groups=('blackarch' 'blackarch-database')
 pkgdesc='Convert XBase / FoxPro databases to PostgreSQL'
 url='https://github.com/kstrauser/pgdbf'
-arch=('i686' 'x86_64' 'armv6h' 'armv7h' 'aarch64')
+arch=('x86_64' 'armv6h' 'armv7h' 'aarch64')
 license=('GPL3')
 makedepends=('git')
 source=('git+https://github.com/kstrauser/pgdbf')

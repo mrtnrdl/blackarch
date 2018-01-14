@@ -2,10 +2,10 @@
 # See COPYING for license details.
 
 pkgname='suricata'
-pkgver='4.0.0'
+pkgver='4.0.3'
 pkgrel=1
 pkgdesc='An Open Source Next Generation Intrusion Detection and Prevention Engine.'
-arch=('i686' 'x86_64' 'armv6h' 'armv7h' 'aarch64')
+arch=('x86_64' 'armv6h' 'armv7h' 'aarch64')
 url='http://openinfosecfoundation.org/index.php/download-suricata'
 groups=('blackarch' 'blackarch-defensive')
 license=('GPL2')
@@ -15,7 +15,7 @@ depends=('zlib' 'nss' 'jansson' 'libcap-ng' 'libnetfilter_queue' 'libnfnetlink'
 optdepends=('snort: suricata can use rulesets provided by snort')
 backup=('etc/suricata/suricata.yaml')
 source=("http://openinfosecfoundation.org/download/suricata-${pkgver}.tar.gz")
-sha1sums=('f909c988a3ac8ab88546ef57bfcbebc3beb821c5')
+sha1sums=('f4598bd1df6d081829ffc318b273094ca0a7b219')
 
 prepare() {
   cd "$srcdir/suricata-$pkgver"

@@ -2,7 +2,7 @@
 # See COPYING for license details.
 
 pkgname='commix'
-pkgver=906.e763b68
+pkgver=997.0a15f95
 pkgrel=1
 groups=('blackarch' 'blackarch-webapp' 'blackarch-automation'
         'blackarch-exploitation')
